@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Skill Gap Analyzer</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Smart Skill Gap Analyzer</h1>
+    <p>Analyze the gap between your current skills and career goals</p>
+
+    <div class="container">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="career">Select Career Goal</label>
+        <select id="career">
+            <option value="">-- Select Career --</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="datascience">Data Scientist</option>
+        </select>
+
+        <label for="skills">Your Current Skills</label>
+        <input type="text" id="skills" placeholder="Example: HTML, CSS">
+
+        <button onclick="analyzeSkillGap()">Analyze Skill Gap</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
